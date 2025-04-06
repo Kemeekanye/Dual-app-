@@ -1,0 +1,7 @@
+- name: Deploy Flask and Node apps with shared PostgreSQL
+  hosts: app_servers
+  become: yes
+  roles:
+    - postgresql
+    - flask
+    - nodejs
